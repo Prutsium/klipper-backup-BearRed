@@ -65,7 +65,7 @@ push_config(){
   git pull -v
   git add . -v
   current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Ratrig-1 autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  git commit -m "Bear Red autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push "https://Prutsium:$GH_TOKEN@github.com/Prutsium/klipper-backup-BearRed.git"
 #  git push
 }
