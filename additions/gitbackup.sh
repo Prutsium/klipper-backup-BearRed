@@ -103,9 +103,9 @@ else
 fi
 
 # Specify release directory
-dest="~/releases"
+dest="releases"
 # Store releases in release directory
-mkdir -p $dest
+mkdir -p ~/$dest
 
 # Set the git working dir inside our project
 export GIT_DIR=$slug/.git
