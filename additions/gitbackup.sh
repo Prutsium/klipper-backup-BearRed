@@ -114,6 +114,6 @@ export GIT_DIR=$slug/.git
 tag=$(git describe --tags --abbrev=0)
 
 # Create a zip file out of the latest tag release
-git archive $tag --prefix="Prutsium/klipper-backup-BearRed.git" --format=zip --output="~/$dest/$slug-$tag.zip"
+git archive $tag --prefix="Prutsium/klipper-backup-BearRed.git" --format=zip --output="~/$dest/$tag.zip"
 
 echo "Created $dest/$slug-$tag.zip"
