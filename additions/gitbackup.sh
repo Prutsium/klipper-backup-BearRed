@@ -106,7 +106,7 @@ fi
 slug="~/klipper_config"
 
 # Specify release directory
-dest="~/releases"
+dest="releases"
 
 # Store releases in release directory
 mkdir -p $dest
