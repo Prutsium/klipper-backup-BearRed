@@ -103,7 +103,7 @@ else
 fi
 
 # Specify the project directory that contains .git
-slug="~/klipper_config"
+slug="klipper_config"
 
 # Specify release directory
 dest="releases"
@@ -118,6 +118,6 @@ export GIT_DIR=$slug/.git
 tag=$(git describe --tags --abbrev=0)
 
 # Create a zip file out of the latest tag release
-git archive $tag --prefix="$slug/" --format=zip --output="$dest/$slug-$tag.zip"
+git archive $tag --prefix="$slug/" --format=zip --output="~/$dest/$slug-$tag.zip"
 
 echo "Created $dest/$slug-$tag.zip"
