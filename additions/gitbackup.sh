@@ -102,3 +102,17 @@ else
     echo "Already a tag on this commit"
 fi
 
+# Specify release directory
+dest="releases"
+
+# Store releases in release directory
+mkdir -p ~/$dest
+
+# Set the git working dir inside our project
+export GIT_DIR=$slug/.git
+
+# Get the latest tag
+tag=$(git describe --tags --abbrev=0)
+
+# Create a zip file out of the latest tag release
+git archive $tag --prefix="$config_folder/" --format=zip --output="./$dest/$slug-$tag.zip"
